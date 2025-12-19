@@ -1,0 +1,192 @@
+# ============================================================================
+# Ops Copilot - Python Dependencies
+# ============================================================================
+
+# ============================================================================
+# Core Framework
+# ============================================================================
+
+# LangChain and LangGraph
+langchain==0.1.0
+langgraph==0.0.20
+langchain-openai==0.0.5
+langchain-community==0.0.13
+langsmith==0.0.70
+
+# ============================================================================
+# LLM Providers
+# ============================================================================
+
+# OpenAI
+openai==1.6.1
+
+# Anthropic (optional)
+anthropic==0.8.1
+
+# ============================================================================
+# Embeddings and Vector Stores
+# ============================================================================
+
+# Pinecone
+langchain-pinecone==0.0.3
+pinecone-client==3.0.0
+
+# Sentence transformers for embeddings
+sentence-transformers==2.2.2
+
+# ============================================================================
+# Document Processing
+# ============================================================================
+
+# Text splitters
+langchain-text-splitters==0.0.1
+
+# ============================================================================
+# Data Validation
+# ============================================================================
+
+# Pydantic for data models
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# ============================================================================
+# Database Clients
+# ============================================================================
+
+# PostgreSQL
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+
+# Redis
+redis==5.0.1
+aioredis==2.0.1
+
+# Elasticsearch
+elasticsearch==8.11.1
+
+# ============================================================================
+# HTTP Clients
+# ============================================================================
+
+# Async HTTP client
+aiohttp==3.9.1
+
+# Prometheus client
+prometheus-client==0.19.0
+
+# ============================================================================
+# API Framework
+# ============================================================================
+
+# FastAPI
+fastapi==0.108.0
+uvicorn[standard]==0.25.0
+
+# CORS middleware
+python-multipart==0.0.6
+
+# ============================================================================
+# Utilities
+# ============================================================================
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Async utilities
+asyncio==3.4.3
+
+# JSON handling
+orjson==3.9.10
+
+# ============================================================================
+# Development Tools
+# ============================================================================
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Code quality
+black==23.12.0
+isort==5.13.2
+mypy==1.7.1
+flake8==6.1.0
+
+# Debugging
+ipython==8.18.1
+ipdb==0.13.13
+
+# ============================================================================
+# Optional Dependencies
+# ============================================================================
+
+# Jupyter for notebooks (optional)
+# jupyter==1.0.0
+# notebook==7.0.6
+
+# Visualization (optional)
+# matplotlib==3.8.2
+# seaborn==0.13.0
+
+# ============================================================================
+# Installation Instructions
+# ============================================================================
+
+# Basic installation:
+#   pip install -r requirements.txt
+
+# Development installation (includes dev tools):
+#   pip install -r requirements.txt
+#   pip install pytest black isort mypy flake8 ipython ipdb
+
+# Production installation (minimal):
+#   pip install --no-dev -r requirements.txt
+
+# ============================================================================
+# Version Notes
+# ============================================================================
+
+# LangChain: 0.1.0
+# - Latest stable version with full feature support
+# - Compatible with LangGraph 0.0.20
+
+# LangGraph: 0.0.20
+# - State machine support
+# - Conditional routing
+# - Checkpointing
+
+# OpenAI: 1.6.1
+# - GPT-4 Turbo support
+# - Function calling
+# - Structured outputs
+
+# Pinecone: 3.0.0
+# - Vector search
+# - Metadata filtering
+# - Hybrid search support
+
+# FastAPI: 0.108.0
+# - Async support
+# - Automatic OpenAPI docs
+# - Type validation
+
+# ============================================================================
+# Platform-Specific Notes
+# ============================================================================
+
+# Windows:
+#   - Use 'pip install -r requirements.txt'
+#   - May need Visual C++ Build Tools for some packages
+
+# macOS:
+#   - Use 'pip3 install -r requirements.txt'
+#   - May need Xcode Command Line Tools
+
+# Linux:
+#   - Use 'pip3 install -r requirements.txt'
+#   - May need build-essential package
+
+# Docker:
+#   - Use multi-stage build for smaller images
+#   - See Dockerfile for optimized setup
